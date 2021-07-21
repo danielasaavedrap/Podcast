@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+#header-menu{
+    width: 100%;
+    height: 80px;
+    background-color: #ffff;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    width: 36px;
+    height: 36px;
+    margin-left: 100px;
+}
+.MenuPC {
+    width: 100%;
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+.MenuPC ul{
+      display: flex;      
+}
+.MenuPC li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-right: 24px;
+}
+.MenuPC  a{
+    text-decoration: none;
+    color: #060A24;
+    font-size: 16px;
+    line-height: 28px;
+}   
+.MenuPC a:hover {
+    color: #00f3bb;
+    text-decoration: line-through;
+}
+.MenuPC a:active{
+    color: #060A24 56%;
+    text-decoration: line-through;    
+}
+#hamburguesa, .fa-times, .fa-bars{
+    display: none;
+}
+.menuTelefono {
+  display:none;
+    margin: 0;
+    top: 100px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: #0000EC;
+    width: 100%;
+    height: 224px;
+    color: #fff;    
+    list-style: none; 
+    flex-direction: column;
+    justify-content: space-around;
+    animation: animationMenuTelefono 0.8s;
+}
+.menuTelefono li{
+    list-style: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.menuTelefono  a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0;
+}
+#hamburguesa:checked ~ .menuTelefono{
+    display: flex;
+}
+#hamburguesa:checked ~ label .fa-bars{
+    display: none;
+}
+#hamburguesa:checked ~ label .fa-times{
+    display: block;
+}
+@keyframes animationMenuTelefono {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 0%;     
+    }
+}
+header{
+    margin-top: 120px;
+    margin-left: 200px;
+}
+.titulo {
+    display: flex;
+    flex-direction:row;
+}
+.titulo h2{
+    font-size:  54px;
+    color: #060A24;
+}
+header p {
+    font-size: 16px;
+    color: #060A24;
+    line-height: 24px;
+    width: 628PX;
+}
+input[type="button"]{
+    margin-top: 56px;
+    margin-bottom: 5px;
+    padding: 16px 59px;
+    background-color: #00F3BB;
+    border: none;
+    font-size: 18px;
+    color: #060A24;
+    text-align: center;
+    line-height: 24px;
+    cursor:pointer;
+}
+input[type="button"]:hover{
+    color:#FFFFFF;
+    background-image: linear-gradient(to left, #0000FE 0%, #00F0B8 100%);
+}
+/*Seccion de episodios*/
+#episodios{
+    width: 100%;
+    background-image: url(./assets/fondo-azul1.svg);
+    background-repeat: no-repeat;
+    background-position:center top;
+    padding-top: 186px;    
+}
+#episodios > h3{
+    color: #FFFFFF;
+}
+.tit{
+    font-size: 48px;
+    margin-left: 200px;
+    margin-bottom: 26px;
+}
+#GrupEpisodios{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.Ep-S{
+    display: flex;
+    flex-direction: row;
+}
+#PE{
+    margin-bottom: 72px;
+}
+.Ep-S > div{
+    margin-right: 72px;
+}
+.spotify{
+    width: 584px;
+    height: 232px;
+}
+/*seccion de donde*/
+#dedonde{
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+    justify-content: center;
+}
+#phone{
+    width: 457.6px;
+    height: 660px;
+}
+.donde{
+    display: flex;
+    flex-direction: column;
+    margin-top: 189px;
+    margin-left: 62.4px;
+}
+.donde h3{
+    font-size: 48px;
+    color: #060A24;
+    margin-bottom: 24px;
+}
+.donde p {
+    width: 464px;
+    font-size: 16px;
+    line-height: 24px;
+}
+/*Invitados*/
+#invitadas{
+    margin-top: 64px;
+}
+#collage{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.Collage-fotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.foto{
+    width: 480px;
+    height: 364px;
+}
+/*seccion de temas*/
+#temas{
+    margin-top: 64px;
+}
+#cont-Temas{
+    display: flex;
+    flex-direction: row;
+    margin-top: 69px;
+    margin-left: 200px;
+    justify-content: space-around;
+}
+.tematicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tematicas p{
+    width: 220px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 29px;
+    margin-bottom: 34px;
+}
+/* seccion de novedades*/
+#novedades{
+    width: 100%;
+    height: 518px;
+    background-image: url(./assets/fondo-azul2.svg);
+    background-repeat: no-repeat;
+    background-position:center top;
+    padding-top: 213px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#novedades h1{
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 36px;
+}
+#footer{
+    font-size: 16px;
+    color: #060A24;
+    line-height: 28px;
+    margin: 36px 100px 31px 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social-media ul{
+    display: flex;      
+}
+.social-media li {
+  list-style-type: none;
+  cursor: pointer;
+  margin-right: 36px;
+}
+.social-media  a{
+  text-decoration: none;
+}   
+@media screen and (max-width: 400px){
+    .MenuPC {
+        display: none;
+    }
+    #header-menu {
+        width: 100%;
+        height: 44px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .fa-bars{
+        display: block;        
+        width: 24px;
+        height: 24px;
+    }
+    .btn-label{
+        margin-right: 16px;
+        width: 24px;
+        height: 24px;
+    }
+    #logo{
+        width: 24px;
+        height: 24px;
+        margin-left: 16px;
+    }
+    .menuTelefono{
+        width: 100%;
+        height: 224px;
+    }    
+    header{
+        margin-top: 29px;
+        margin-left: 16px;
+    }
+    .titulo {
+        flex-direction: column;
+    }
+    .titulo h2{
+        font-size: 36px;
+    }
+    header p {
+        font-size: 14px;
+        width: 288PX;
+        margin-top: 16px;
+    }
+    header input[type="button"]{
+        margin-top: 36px;
+        margin-bottom: 24px;
+        padding: 13px 96px;
+        width: 288px;  
+        font-size: 16px; 
+        line-height: 22px;
+    }
+    #episodios{
+        width: 100%;
+        padding-top: 64px;
+        background-image: url(./assets/fondo-azul1movile.svg);
+    }
+    #episodios > h3{
+        margin-bottom: 21px;
+    }
+    .tit{
+        font-size: 36px;
+        margin-left: 16px;
+        line-height: 42px;
+    }
+    #GrupEpisodios{
+        display: flex;
+        flex-direction: column;
+       align-items: center; 
+    }
+    .Ep-S{
+        display: flex;
+        flex-direction: column;
+    }
+    .spotify{
+        width: 298px;
+        height: 225px;
+    }
+    #PE{
+        margin-bottom: 0px;
+    }
+    .Ep-S > div{
+        margin-right: 0px;
+    }
+    .Ep-S div{
+        margin-bottom: 11px;
+    }
+    #dedonde{
+        flex-direction: column;
+        margin-top: 48px;
+        justify-content: center;
+    }
+    #phone{
+        width: 360px;
+        height: 519px;
+    }
+    .donde{
+        margin-top: 27px;
+        margin-left: 16px;
+    }
+    .donde h3{
+        margin-bottom: 8px;
+    }
+    .donde p {
+        width: 288px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #invitadas{
+        margin-top: 54px;
+    }
+    #collage{
+        margin-top: 14px;
+        align-items: center;
+    }
+    .Collage-fotos{
+        flex-direction: column;
+    }
+    .foto{
+        width: 320px;
+        height: 243px;
+    }
+    #temas{
+        margin-top: 48px;
+    }
+    #cont-Temas{
+        flex-direction: column;
+        margin-top: 37px;
+        align-items: center;
+        margin-left: 0;
+    }
+    .tematicas p{
+        width: 288px;
+        margin-top: 13px;
+        margin-bottom: 36px;
+    }
+    #novedades{
+        background-image: url(./assets/fondo-azul2movile.svg);
+        padding-top: 64px;
+    }
+    #novedades h1{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    #novedades input[type="button"]{
+        margin-bottom:672px;
+        padding: 13px 43px;
+        width: 288px;  
+        font-size: 16px; 
+        line-height: 22px;
+    }
+    #footer{
+        flex-direction: column;
+        font-size: 14px;
+        width: 227px;
+        margin: 24px 45px 31px 45px;
+    }
+    .social-media{
+        margin-top: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media ul{
+        margin-left: 45px;
+    }
+    .social-media li {
+        justify-content: center;
+        align-items: center;
+        margin-right: 38px;
+    }
+}
