@@ -278,6 +278,9 @@ input[type="button"]:hover{
 .social-media  a{
   text-decoration: none;
 }   
+.social-media a:hover > img{
+    filter: invert(0.4) sepia(1);
+}
 @media screen and (max-width: 400px){
     .MenuPC {
         display: none;
