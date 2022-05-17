@@ -1,4 +1,4 @@
-# Podcast
+# Podcast Web
 
 ## About the project
 Layout of a landing page through HTML and CSS, developing functionalities of content reproduction, navigation, and compatibility with multiple browsers and devices.
